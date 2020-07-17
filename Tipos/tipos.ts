@@ -84,3 +84,8 @@ usuario = {
 }
 
 console.log(usuario);
+
+
+// Union Types
+let nota = 10
+console.log(`Minha nota é ${nota}`);

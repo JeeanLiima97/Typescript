@@ -89,3 +89,24 @@ console.log(usuario);
 // Union Types
 let nota = 10
 console.log(`Minha nota é ${nota}`);
+
+// never -> nunca vai retorna, loop infinito ou termina com erro
+
+function falha(msg: string): never {
+    throw new Error(msg)
+}
+
+const produto = {
+    nome: 'JE',
+    preco: -1,
+    validarProduto(){
+        if(this.nome.trim.length == 0){
+            falha('Precisa do nome')
+        }
+        if(this.preco <= 0){
+            falha('Preco invaliod')
+        }
+    }
+}
+produto.validarProduto()
+

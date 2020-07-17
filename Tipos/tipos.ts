@@ -110,3 +110,5 @@ const produto = {
 }
 produto.validarProduto()
 
+let altura = 10;
+

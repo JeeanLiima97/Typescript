@@ -15,3 +15,20 @@ console.log(aniversario);
 var casamento = new Data; //posso omitor os "()"
 casamento.ano = 2017;
 console.log(casamento);
+var DataEsperta = /** @class */ (function () {
+    function DataEsperta(dia, mes, ano) {
+        if (dia === void 0) { dia = 1; }
+        if (mes === void 0) { mes = 1; }
+        if (ano === void 0) { ano = 1970; }
+        this.dia = dia;
+        this.mes = mes;
+        this.ano = ano;
+    }
+    return DataEsperta;
+}());
+var aniversarioEsperto = new DataEsperta(3, 10, 1999);
+console.log(aniversarioEsperto);
+var casamentoEsperto = new DataEsperta;
+//posso omitor os "()"
+casamento.ano = 2017;
+console.log(casamentoEsperto);

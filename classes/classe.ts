@@ -18,3 +18,21 @@ console.log(aniversario);
 const casamento = new Data //posso omitor os "()"
 casamento.ano = 2017
 console.log(casamento);
+
+
+
+
+class DataEsperta{
+    constructor(public dia: number = 1, public mes: number = 1 ,public ano: number = 1970){
+       
+    }
+}
+
+const aniversarioEsperto = new DataEsperta
+(3,10,1999)
+console.log(aniversarioEsperto);
+
+const casamentoEsperto = new DataEsperta
+ //posso omitor os "()"
+casamento.ano = 2017
+console.log(casamentoEsperto);

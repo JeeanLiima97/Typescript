@@ -77,3 +77,15 @@ const pe1 = new Pessoa
 pe1.idade = 10
 console.log(pe1);
 
+// Atributos e métodos estaticos -> não precisam ser estanciados 
+
+class Matematica{
+   static PI: number = 3.1416
+
+   static areaCirc(raio: number): number{
+        return this.PI * raio * raio
+    }
+}
+
+console.log(Matematica.areaCirc(10));
+

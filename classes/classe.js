@@ -72,3 +72,14 @@ var Pessoa = /** @class */ (function () {
 var pe1 = new Pessoa;
 pe1.idade = 10;
 console.log(pe1);
+// Atributos e métodos estaticos -> não precisam ser estanciados 
+var Matematica = /** @class */ (function () {
+    function Matematica() {
+    }
+    Matematica.areaCirc = function (raio) {
+        return this.PI * raio * raio;
+    };
+    Matematica.PI = 3.1416;
+    return Matematica;
+}());
+console.log(Matematica.areaCirc(10));

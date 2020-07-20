@@ -1,3 +1,4 @@
+"use strict";
 // os tipos são inferidos
 // string
 var nome = 'Jean';
@@ -79,3 +80,4 @@ var produto = {
     }
 };
 produto.validarProduto();
+var altura = 10;
